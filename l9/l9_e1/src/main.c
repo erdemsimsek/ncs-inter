@@ -34,11 +34,14 @@ int main(void)
 		return -1;
 	}
 
+	size_t counter = 0u;
 	while (1) {
 		ret = gpio_pin_toggle_dt(&led);
 		if (ret < 0) {
 			return -1;
 		}
+		printk("Hello world from the application, counter value is %u \r\n", counter);
+		counter++;
 		k_msleep(SLEEP_TIME_MS);
 	}
 }

@@ -1,0 +1,10 @@
+/ {
+  aliases {
+		mcuboot-button0 = &button1;
+		mcuboot-led0 = &led1;
+  };
+};
+
+&spu00 {
+	status = "okay";
+};
