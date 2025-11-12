@@ -40,7 +40,7 @@ int main(void)
 		if (ret < 0) {
 			return -1;
 		}
-		printk("New New Hello world from the application, counter value is %u \r\n", counter);
+		printk("Hello world from the application, counter value is %u \r\n", counter);
 		counter++;
 		k_msleep(SLEEP_TIME_MS);
 	}
